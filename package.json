@@ -1,6 +1,6 @@
 {
   "name": "@hexeo/json-buffer",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "JSON with buffer support",
   "main": "lib/JSONB.js",
   "repository": {
