@@ -37,7 +37,6 @@ export default class JSONB {
   }
 
   static stringify (value, ...options) {
-    const args = [].concat(value, options);
-    return JSON.stringify(...args);
+    return JSON.stringify(value, ...options);
   }
 }

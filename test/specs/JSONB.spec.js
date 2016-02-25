@@ -118,7 +118,7 @@ describe('JSONB', () => {
 
   describe('.parse()', () => {
     it('should match JSON.parse()', () => {
-      const json = `{
+      const json = `[{
         "numeric":1234,
         "string":"foo",
         "booleanTrue":true,
@@ -127,7 +127,7 @@ describe('JSONB', () => {
         "object":{
           "key":"value"
         }
-      }`;
+      }]`;
 
       const JSONBParsed = JSONB.parse(json);
       const JSONParsed = JSON.parse(json);
@@ -178,7 +178,7 @@ describe('JSONB', () => {
     });
 
     it('should match JSON.stringify()', () => {
-      const object = {
+      const object = [{
         numeric: 1234,
         string: 'foo',
         booleanTrue: true,
@@ -187,7 +187,7 @@ describe('JSONB', () => {
         object: {
           key: 'value'
         }
-      };
+      }];
 
       const JSONBStringified = JSONB.stringify(object);
       const JSONStringified = JSON.stringify(object);
